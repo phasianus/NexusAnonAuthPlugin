@@ -1,0 +1,21 @@
+<configuration debug="true">
+
+    <property name="max.retention.days" value="60" />
+
+     <appender name="STDOUT"  class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+          <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} %M\(%F:%L\) - %msg%n</pattern>
+        </encoder>
+     </appender>
+       
+  
+          
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>   
+                                                             
+    <logger name="cz.gelion.nexus" level="TRACE"/>
+   
+    
+    
+</configuration>
